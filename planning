@@ -1,0 +1,18 @@
+Ajedrez Online Adri
+
+-Front
+    -Tablero
+    -Fichas
+    -Logica de movimientos 
+        -Legales
+        -Ilegales
+    -Maquina de estado
+    -Ally
+        -Jugadas con teclado
+        -Voz con -Jugadas
+
+
+-Back
+    -Setup Sockets
+    -Salas
+    -Deploy
