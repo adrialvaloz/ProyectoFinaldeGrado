@@ -12,8 +12,8 @@ const $ = (s) => document.querySelectorAll(s);
 const PIECE_OFFSET = CELL_HEIGHT * 0.1;
 
 const theme = {
-    light:'#d38d47',
-    dark:'#fbce9c',
+    light:'#fbce9c',
+    dark:'#d38d47',
 }
 
 const pieceTheme = {
@@ -121,22 +121,22 @@ for(let i = 0; i < 2; i += 1){
     }
     
     boardMatrix[1][i * 7] = {
-        type: pieces.bishop,
+        type: pieces.knight,
         color: i ? pieceTheme.light : pieceTheme.dark,
     }
     
     boardMatrix[6][i * 7] = {
-        type: pieces.bishop,
+        type: pieces.knight,
         color: i ? pieceTheme.light : pieceTheme.dark,
     }
     
     boardMatrix[2][i * 7] = {
-        type: pieces.knight,
+        type: pieces.bishop,
         color: i ? pieceTheme.light : pieceTheme.dark,
     }
     
     boardMatrix[5][i * 7] = {
-        type: pieces.knight,
+        type: pieces.bishop,
         color: i ? pieceTheme.light : pieceTheme.dark,
     }
     
@@ -146,7 +146,7 @@ for(let i = 0; i < 2; i += 1){
     }
     
     boardMatrix[4][i * 7] = {
-        type: pieces.queen,
+        type: pieces.king,
         color: i ? pieceTheme.light : pieceTheme.dark,
     }
 }
