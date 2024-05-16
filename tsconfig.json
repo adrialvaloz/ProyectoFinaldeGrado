@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "lib": ["es6", "dom", "es2017"],
+      "module": "ES6",
+      "target": "ES5",
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "downlevelIteration": true // Prevents converting for...of to regular for loops
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
