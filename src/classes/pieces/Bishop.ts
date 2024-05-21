@@ -8,16 +8,16 @@ class Bishop extends Piece {
   }
 
   availableMovements(position: [number, number], boardMatrix: Cell[][]) {
-    // Down Right
+    //Abajo derecha
     this.checkDirection(position, [1, 1], boardMatrix);
 
-    // Down Left
+    //Abajo izquierda 
     this.checkDirection(position, [-1, 1], boardMatrix);
 
-    // Up Right
+    //Arriba derecha
     this.checkDirection(position, [1, -1], boardMatrix);
 
-    // Up Left
+    //Arriba izquierda
     this.checkDirection(position, [-1, -1], boardMatrix);
   }
 }

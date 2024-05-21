@@ -1,3 +1,6 @@
+const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: {
     index: './src/index.ts',

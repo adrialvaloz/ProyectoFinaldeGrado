@@ -70,7 +70,7 @@ class Board {
     this.dragPiece = this.dragPiece.bind(this);
     this.dropPiece = this.dropPiece.bind(this);
 
-    // Mouse events
+    //Eventos del raton
     this.$canvas.addEventListener('mousemove', this.dragPiece);
 
     this.$canvas.addEventListener('mousedown', this.pickPiece);
@@ -209,14 +209,14 @@ class Board {
           this.cellHeight,
         );
 
-        // Draw debug position
+        // Dibujo de posicion de debug
         this.ctx.fillStyle = textColor;
         this.ctx.textBaseline = 'top';
         this.ctx.textAlign = 'start';
         this.ctx.font = '8px Arial';
         this.ctx.fillText(`[${x};${y}]`, drawX * this.cellWidth + 10, drawY * this.cellHeight + 10);
 
-        // Draw the piece
+        //Dibujo de la pieza
         const cell = this.boardMatrix[x][y];
 
         if (cell.selected) {

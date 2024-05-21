@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Tabula Ludos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Formulario de ingreso</h2>
+    <form action="/login" method="post">
+        <div class="container">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Ingresa tu usuario" name="username" required>
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingresa tu contraseña" name="password" required>
+            <button class="button1" type="submit">Ingresar</button>
+            <button class="button2" onclick="window.location.href='/register'">Registrarse</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Recuerdame
+            </label>
+
+            <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
+        </div>
+    </form>
+</body>
+</html>
